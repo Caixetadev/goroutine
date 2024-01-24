@@ -11,7 +11,7 @@ func main() {
 
 	go func() {
 		memoryAccess.Lock() // <2>
-		value++
+		value--
 		memoryAccess.Unlock() // <3>
 	}()
 
